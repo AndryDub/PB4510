@@ -11,7 +11,7 @@
 /*<code class="inline-code code-fix font-theme font-theme--code">&lt;area&gt;</code>  -  не прописывается сод в кавычках*/
 	
 		body{
-		/*width: 100%;*/
+		width: 100%;
 		font-size: 20px;
 		line-height: 30px;
 		font-family: 'Armata', sans-serif;
@@ -24,6 +24,7 @@
 	}
 
 	.map-container {
+		border: 3px solid #fff;
 	margin: 0 auto;
 	width: 100%;
 	padding-top: 76px;
@@ -84,7 +85,7 @@ img{
 		</p>
 </div>
 
-	<div style="background: transparent; float: left; width: 20%; margin-top: 20px;">
+	<div style=" width: 20%; float: left;  margin-top: 20px;">
 			<ul style="list-style-type: none; font-size: medium; color: #fff;">
 				<li><a style="color: #fff;" href="#кратко">Кратко</a></li>
 				<li><a style="color: #fff;" href="#пример">Пример</a></li>
@@ -94,11 +95,10 @@ img{
 			</ul>
 	</div>
 
-	<div style="background: transparent; float: right; width: 150px;">
+	<div style="width: 150px; float: right;">
 	</div>
 
-<div style="background: transparent;
-	margin-left: 20%;
+<div style="margin-left: 200px;
 	margin-right: 150px;
 	max-width: auto;">
 	<p>
@@ -264,7 +264,7 @@ img{
 		можно разметить на картинке отдельные предметы и сделать целый каталог:
 	</p>
 	<p><strong>Для создания координат активной области, я использовал бесплатный онлайн-генератор карт изображений:</strong><br>
-		<a target="_blank" alt="бесплатный онлайн-генератор карт изображений" href="https://www.image-map.net/" style="color: #fff" >www.image-map.net/</a>
+		<a target="_blank" alt="Бесплатный онлайн-генератор карт и изображений" href="https://www.image-map.net/" style="color: #e24e4e">www.image-map.net/</a>
 	</p>
 
 <div>
@@ -326,11 +326,16 @@ img{
 			<area target="_blank" alt="Плутон" title="Плутон"
 			href="https://ru.wikipedia.org/wiki/Плутон" coords="893,20,10" shape="circle">
 		</map>
-	<figure>
-		<img src="img/sun_sistem2 1000-640.png" alt="Кликабельная картинка солнечной системой" class="responsive" usemap="#planetsmap">
-	</figure>
+			<figure>
+				<img src="img/sun_sistem2 1000-640.png" alt="Кликабельная картинка солнечной системой" class="responsive" usemap="#planetsmap">
+				<figcaption>
+					С изображением конечно получился - косяк)))<br>
+					Несколько раз переделывал и заново отбивал все точки через онлайн-генератор, но так и не понял,как всё-таки сделать изображение, которое будет адаптивным (резиновым) и в нём не будут сбиваться, в зависимости от разрешения изображения, связанные с ним координаты областей.
+				</figcaption>
+			</figure>
 		</div>
+	</div>
 </div>
-</div>
+
 </body>
 </html>
