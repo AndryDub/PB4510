@@ -1,45 +1,47 @@
-body{
-		width: 100%;		
-		font-family: 'Armata', sans-serif;
-		font-size: 16px;
-		line-height: 1;
-		color: #373737;
-		background: #f7f7f7;
-		box-sizing: border-box;
-		margin: 0;
-		padding: 0;
-		flex-wrap: wrap;
-	}
-	
-	.container{
-		margin: 0 auto;
-		width: 100%;
-		max-width: 700px;
-		padding: 15px;
-	}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+}
 
-/*Верхний блок "Шапка страницы"*/
+body{
+	width: 100%;	
+	height: 100%;	
+	font-family: 'Armata',sans-serif;
+	line-height: 1.3;
+	color: #373737;
+	background: #f7f7f7;
+}
+	
+.container{
+	margin: 0 auto;
+	width: 100%;
+	max-width: 950px;
+	background: rgba(233, 233, 41, 0.521);
+}
+
+/* --Верхний блок "Шапка страницы" -- */
 .logo-top{
 	background: rgba(113, 162, 226, 0.568);
-	padding: 5px;
+	padding: 20px;
 	box-sizing: border-box;
 }
 
-h1{
-	font-weight: 500;
+h2{
+	font-weight: 600;
 	text-align: center;
 	letter-spacing: 1px;
 	word-spacing: 5px;
 	color: blue;
 }
 
-/*-- Левый контейнер -- */
+/* --  -- */
 
 .aside-list{
-	background: rgba(233, 233, 41, 0.521);
-	width: 20%;
+	width: 200px;
+	height: 100%;
 	float: left;
-	box-sizing: border-box;
 }
 
 h4{
@@ -56,9 +58,9 @@ h4{
 }
 
 .widget{
-	padding: 0 5px;
+	padding: 15px 10px;
 	/*background: white;*/
-	font-size: 13px;
+	font-size: 14px;
 	/*margin-bottom: 30px;*/
 	box-shadow: 3px 3px 1 rgba(0, 0, 0, .05);
 }
@@ -69,8 +71,12 @@ h4{
 	/*margin-bottom: 20px;*/
 	border: 2px solid  #cca878;
 	box-shadow: 3px 3px 0 0 #800080;
+	margin-bottom: 10px;
 }
 
+.widget-categori-list{
+	padding-left: 25px;
+}
 
 .widget-categori-list li{
 	border-bottom: 1px solid #cca878;
@@ -80,7 +86,6 @@ h4{
 	line-height: 1;
 	/*width: fit-content;*/
 }
-
 
 .widget-categori-list a{
 	font-size: 14px;
@@ -92,9 +97,10 @@ h4{
 	color: #dd3e3e; /* Цвет ссылки при наведении на нее курсора мыши */  
 }
 
-.widget-categori-list a:visited {
-	color: #800080; /* Цвет посещённой ссылки */
-}
+/*.widget-categori-list a:visited {
+	color: #800080; /* Цвет посещённой ссылки 
+}*/ /* -- НЕ СРАБАТЫВАЕТ!!!  -- */ 
+
 
 
 /*  -- СТИЛИ ДЛЯ БЛОКА С ОЛСНОВНЫМ СОДЕРЖИМЫМ --  */
@@ -103,9 +109,8 @@ h4{
 
 .posts-list{
 	background: #fff;
-	margin-left: 20%;
-	
-	/*padding: 20px 15px;*/
+	margin-left: 200px;
+	min-height: 100%;
 }
 
 h3{
@@ -113,7 +118,7 @@ h3{
 	word-spacing: 3px;
 	text-align: center;
 	color: #222222;
-	padding: 0 20px;
+	padding: 20px;
 	display: block;
 	width: fit-content;
 	margin-left: auto; 
@@ -123,9 +128,9 @@ h3{
 .widget-content{
 	font-size: 22px;
 	/*text-align: center;
-	padding: 10px;*/
-	/*margin-bottom: 20px;*/
-	/*border: 2px solid #bbafa0;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 2px solid #bbafa0;
 	box-shadow: 3px 3px 0 0 #800080;*/
 }
 
@@ -133,26 +138,27 @@ h3{
 	display: block;
 	width: 100%;
 	height: auto;
-	margin: 0 20px 10px 0;
-	max-width: 200px;
+	padding: 10px;
+	margin: 0 10px 5px 0;
+	max-width: 300px;
 	object-fit: cover;
 	float: left;
 }
 
 p{
 	text-align: justify;
-	font-family: 'Armata', sans-serif;
+	padding: 10px ;
 }
 
 /* -- Нижний блок "ПОДВАЛ" --*/
 
 .logo-bottom{
 	background: rgba(113, 162, 226, 0.568);
-	padding: 5px;
+	padding: 20px;
 }
 h2{
 	font-size: 32px;
-	font-weight: 500;
+	font-weight: 600;
 	text-align: center;
 	letter-spacing: 1px;
 	word-spacing: 5px;
